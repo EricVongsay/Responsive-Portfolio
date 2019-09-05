@@ -1,5 +1,6 @@
 body{
     background-image: url('background.png');
+
     margin:0 auto;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
@@ -191,17 +192,107 @@ input[type=submit]{
       line-height:30px;
   }
 
-  @media(max-width:640px){
-      h1{
-          position:static;
-          top:0;
+  @media (max-width:640px){
+      .container{
           width:100%;
-          margin-left:0;
       }
-      nav{
-          position:static;
-          top:0;
+      .header{
           width:100%;
+          margin:0;
+          padding:0;
+          clear:both;
+      }
+
+        h1{
+        width:100%;
+        margin:0;
+        }
+
+      nav, nav ul{
+          width:100%;
+          margin:0;
+          margin-left: 5rem;
 
       }
+      .content{ 
+        width: 90%;
+        margin-left:0 1rem 0 0;
+      }
+      footer{
+          width:100%;
+      }
+      p{
+          float:left;
+          clear:both;
+      }
+
+
   }
+
+  @media (max-width:768px){
+    .container{
+        width:90%;
+    }
+    .header{
+        width:100%;
+
+    }
+/* 
+      h1{
+      width:90%;
+      } */
+/* 
+    nav, nav ul{
+        width:100%;
+
+
+    } */
+    .content{ 
+      width: 90%;
+      padding:10px;
+      margin:auto;
+    }
+    footer{
+        width:100%;
+    }
+    p{
+        float:left;
+        clear:both;
+    }
+
+
+}
+
+@media (max-width:980px){
+    .container{
+        width:90%;
+    }
+    .header{
+        width:100%;
+
+    }
+/* 
+      h1{
+      width:90%;
+      } */
+/* 
+    nav, nav ul{
+        width:100%;
+
+
+    } */
+    .content{ 
+      width: 90%;
+      padding:10px;
+      margin:30px;
+    }
+    footer{
+        width:100%;
+    }
+    p{
+        float:left;
+        clear:both;
+    }
+
+
+}
