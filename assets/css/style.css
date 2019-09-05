@@ -15,7 +15,7 @@ h1, h2, h3{
 .header{
     background-color: #ffffff;
     font-size: 14px;
-    position: fixed;
+    position: static;
     width: 100%;
     top:0;
     border-bottom: 2px solid #cccccc;
@@ -189,4 +189,19 @@ input[type=submit]{
 
   .aboutme{
       line-height:30px;
+  }
+
+  @media(max-width:640px){
+      h1{
+          position:static;
+          top:0;
+          width:100%;
+          margin-left:0;
+      }
+      nav{
+          position:static;
+          top:0;
+          width:100%;
+
+      }
   }
